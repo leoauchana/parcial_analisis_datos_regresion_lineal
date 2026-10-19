@@ -72,7 +72,7 @@ Las métricas reportadas corresponden a conjuntos de prueba independientes (**Te
 | **Alquiler – Modelo Final** ($\ln(\text{rent/m²})$, distrito, lag mensual) | **0.943** | **≈ 7.656 RUB/mes** | **≈ 5.122 RUB/mes** | **9.45 %** | Residuos simétricos (*skew* 0.06, *kurtosis* 3.15) |
 
 ### Conclusiones Técnicas
-- **Reducción del error en ventas en casi un 47%:** El pasaje de `price_rub` a $\ln(\text{price\_per\_sqm})$ junto al contexto del distrito y su rezago mensual redujo el RMSE de ~3,2M a ~1,7M RUB.
+- **Reducción del error en ventas en casi un 47%:** El pasaje de `price_rub` mediante la aplicación de log junto al contexto del distrito y su rezago mensual redujo el RMSE de ~3,2M a ~1,7M RUB.
 - **Ausencia de sobreajuste (*Overfitting*):** El error en entrenamiento y en prueba resulta prácticamente idéntico (Ventas: Train RMSE 1,725M vs Test RMSE 1,705M; Alquileres: Train RMSE 7.641 vs Test RMSE 7.656).
 - **Alcance del modelo:** Las especificaciones obtenidas no pretenden emular la negociación final o factores micro subjetivos, pero proporcionan un tasador de referencia altamente preciso para detectar sobreprecios u oportunidades en anuncios de mercado.
 
