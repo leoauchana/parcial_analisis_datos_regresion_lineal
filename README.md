@@ -46,7 +46,7 @@ Se utilizó el dataset público de Kaggle: [`sergionefedov/moscow-real-estate-sa
 ### 3. El Cambio a Precio por Metro Cuadrado (`price_per_sqm`)
 - El precio total depende mecánicamente de la superficie, distorsionando el efecto de las demás variables explicativas.
 - Modelar `price_per_sqm` desacopla el tamaño del departamento, homogeneiza la varianza y produce residuos más estables.
-- **Comparabilidad de errores:** Para contrastar modelos con target en `price_rub` frente a modelos en `price_per_sqm`, las predicciones de estos últimos se reescalan a rublos totales ($\widehat{\text{Precio}} = \widehat{\text{ppsqm}} \times \text{total\_area}$).
+- **Comparabilidad de errores:** Para contrastar modelos con target en `price_rub` frente a modelos en `price_per_sqm`, las predicciones de estos últimos se reescalan a rublos totales.
 
 ### 4. Transformación Logarítmica
 - Aplicar logaritmo natural al target ($\ln(\text{target})$) convierte el modelo en una especificación **semi-logarítmica**, donde los coeficientes representan cambios porcentuales directos.
