@@ -1,0 +1,153 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              price_rub   R-squared:                       0.831
+Model:                            OLS   Adj. R-squared:                  0.830
+Method:                 Least Squares   F-statistic:                     1874.
+Date:                Sat, 17 Oct 2026   Prob (F-statistic):               0.00
+Time:                        20:16:54   Log-Likelihood:            -7.9630e+05
+No. Observations:               48564   AIC:                         1.593e+06
+Df Residuals:                   48436   BIC:                         1.594e+06
+Df Model:                         127                                         
+Covariance Type:            nonrobust                                         
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+const                                     1.413e+07   1.93e+05     73.226      0.000    1.37e+07    1.45e+07
+total_area                                1.801e+05   1838.610     97.965      0.000    1.77e+05    1.84e+05
+to_center_km                             -2.028e+05   4146.302    -48.907      0.000   -2.11e+05   -1.95e+05
+metro_distance_min                       -2.036e+04    834.677    -24.393      0.000    -2.2e+04   -1.87e+04
+mortgage_rate_at_listing                  2.042e+05   2549.321     80.095      0.000    1.99e+05    2.09e+05
+rooms                                    -7.218e+04    3.1e+04     -2.325      0.020   -1.33e+05   -1.13e+04
+okrug_NAO                                -1.497e+07   1.02e+05   -147.001      0.000   -1.52e+07   -1.48e+07
+okrug_SAO                                -1.364e+07   7.73e+04   -176.306      0.000   -1.38e+07   -1.35e+07
+okrug_SVAO                               -1.464e+07   7.55e+04   -193.865      0.000   -1.48e+07   -1.45e+07
+okrug_SZAO                               -1.135e+07   9.14e+04   -124.197      0.000   -1.15e+07   -1.12e+07
+okrug_TAO                                -1.024e+07   1.63e+05    -62.845      0.000   -1.06e+07   -9.92e+06
+okrug_VAO                                -1.519e+07   7.98e+04   -190.396      0.000   -1.53e+07    -1.5e+07
+okrug_YuAO                               -1.477e+07   7.84e+04   -188.546      0.000   -1.49e+07   -1.46e+07
+okrug_YuZAO                              -1.088e+07   8.26e+04   -131.674      0.000    -1.1e+07   -1.07e+07
+okrug_ZAO                                -1.037e+07   8.21e+04   -126.378      0.000   -1.05e+07   -1.02e+07
+okrug_ZelAO                              -1.234e+07   2.05e+05    -60.256      0.000   -1.27e+07   -1.19e+07
+renovation_designer                       3.715e+06   5.29e+04     70.159      0.000    3.61e+06    3.82e+06
+renovation_euro                           1.709e+06   3.52e+04     48.582      0.000    1.64e+06    1.78e+06
+renovation_no_renovation                  -1.25e+06   3.94e+04    -31.715      0.000   -1.33e+06   -1.17e+06
+building_type_khrushchev                 -2.432e+06   5.08e+04    -47.876      0.000   -2.53e+06   -2.33e+06
+building_type_modern_panel               -5.507e+05   4.75e+04    -11.593      0.000   -6.44e+05   -4.58e+05
+building_type_monolith                    5.736e+05   4.77e+04     12.031      0.000     4.8e+05    6.67e+05
+building_type_panel                      -1.479e+06   4.72e+04    -31.326      0.000   -1.57e+06   -1.39e+06
+building_type_stalin                      1.972e+06   6.62e+04     29.808      0.000    1.84e+06     2.1e+06
+metro_distance_type_walk                  2.975e+06   4.43e+04     67.191      0.000    2.89e+06    3.06e+06
+metro_station_Arbatskaya (F)              3.093e+05   2.34e+05      1.322      0.186   -1.49e+05    7.68e+05
+metro_station_Bagrationovskaya           -4.959e+05    2.3e+05     -2.156      0.031   -9.47e+05    -4.5e+04
+metro_station_Begovaya                    3.495e+05   2.28e+05      1.534      0.125   -9.72e+04    7.96e+05
+metro_station_Belorusskaya               -2.026e+05    2.3e+05     -0.881      0.379   -6.54e+05    2.48e+05
+metro_station_Borovitskaya               -1.501e+05   2.38e+05     -0.632      0.527   -6.16e+05    3.16e+05
+metro_station_Chekhovskaya                2.541e+05   2.33e+05      1.090      0.276   -2.03e+05    7.11e+05
+metro_station_Chistye Prudy              -4.792e+05   2.31e+05     -2.077      0.038   -9.31e+05    -2.7e+04
+metro_station_Chkalovskaya               -7.826e+05   2.33e+05     -3.356      0.001   -1.24e+06   -3.25e+05
+metro_station_Delovoy Tsentr              3.123e+05   2.37e+05      1.315      0.188   -1.53e+05    7.78e+05
+metro_station_Dinamo                      3.205e+05   2.17e+05      1.478      0.140   -1.05e+05    7.46e+05
+metro_station_Dostoevskaya                -7.77e+04   2.25e+05     -0.345      0.730   -5.19e+05    3.64e+05
+metro_station_Dubrovka                   -4.449e+05   2.39e+05     -1.858      0.063   -9.14e+05    2.44e+04
+metro_station_Elektrozavodskaya           -6.82e+05   2.31e+05     -2.953      0.003   -1.13e+06   -2.29e+05
+metro_station_Fili                       -2.034e+05    2.3e+05     -0.885      0.376   -6.54e+05    2.47e+05
+metro_station_Filyovsky Park             -7.059e+04   2.22e+05     -0.318      0.750   -5.05e+05    3.64e+05
+metro_station_Frunzenskaya                6.019e+05   2.31e+05      2.609      0.009     1.5e+05    1.05e+06
+metro_station_Kakhovskaya                -7.345e+05   2.13e+05     -3.444      0.001   -1.15e+06   -3.17e+05
+metro_station_Kantemirovskaya            -7.668e+05   2.11e+05     -3.636      0.000   -1.18e+06   -3.53e+05
+metro_station_Kievskaya                   6.212e+05   2.31e+05      2.690      0.007    1.69e+05    1.07e+06
+metro_station_Kitay-Gorod                -9.025e+05   2.49e+05     -3.630      0.000   -1.39e+06   -4.15e+05
+metro_station_Komsomolskaya              -6.561e+05   2.28e+05     -2.879      0.004    -1.1e+06   -2.09e+05
+metro_station_Kozhukhovskaya             -7.401e+05   2.37e+05     -3.124      0.002    -1.2e+06   -2.76e+05
+metro_station_Krasnopresnenskaya          1.674e+06   2.23e+05      7.493      0.000    1.24e+06    2.11e+06
+metro_station_Kropotkinskaya              4.045e+05   2.34e+05      1.732      0.083   -5.34e+04    8.62e+05
+metro_station_Kurskaya                    -4.83e+05   2.33e+05     -2.074      0.038   -9.39e+05   -2.65e+04
+metro_station_Kutuzovskaya                1.068e+05   2.31e+05      0.462      0.644   -3.46e+05     5.6e+05
+metro_station_Kuznetsky Most             -2.398e+05   2.38e+05     -1.007      0.314   -7.06e+05    2.27e+05
+metro_station_Leninsky Prospekt           3.628e+05   2.18e+05      1.667      0.095   -6.37e+04    7.89e+05
+metro_station_Lubyanka                   -6.084e+05   2.34e+05     -2.600      0.009   -1.07e+06    -1.5e+05
+metro_station_Mayakovskaya                1.173e+05   2.41e+05      0.487      0.626   -3.54e+05    5.89e+05
+metro_station_Mendeleevskaya             -1.507e+04   2.27e+05     -0.066      0.947    -4.6e+05     4.3e+05
+metro_station_Molodyozhnaya              -3.785e+05    2.2e+05     -1.721      0.085    -8.1e+05    5.26e+04
+metro_station_Nagatinskaya               -1.749e+05   2.25e+05     -0.779      0.436   -6.15e+05    2.65e+05
+metro_station_Nagornaya                  -1.167e+04   2.07e+05     -0.056      0.955   -4.17e+05    3.94e+05
+metro_station_Novogireyevo               -6.776e+05   2.16e+05     -3.140      0.002    -1.1e+06   -2.55e+05
+metro_station_Novokuznetskaya            -1.336e+05   2.38e+05     -0.562      0.574      -6e+05    3.32e+05
+metro_station_Novoslobodskaya            -3.821e+05   2.27e+05     -1.681      0.093   -8.28e+05    6.33e+04
+metro_station_Novye Cheryomushki          -2.79e+05   2.04e+05     -1.365      0.172    -6.8e+05    1.22e+05
+metro_station_Okhotny Ryad               -3.139e+05    2.3e+05     -1.367      0.172   -7.64e+05    1.36e+05
+metro_station_Oktyabrskaya                7.834e+05   2.26e+05      3.469      0.001    3.41e+05    1.23e+06
+metro_station_Park Kultury                2.248e+05   2.34e+05      0.961      0.337   -2.34e+05    6.83e+05
+metro_station_Park Pobedy                -3.325e+05   2.32e+05     -1.431      0.152   -7.88e+05    1.23e+05
+metro_station_Partizanskaya              -6.978e+04   2.26e+05     -0.308      0.758   -5.13e+05    3.74e+05
+metro_station_Pechatniki                 -5.473e+05   2.38e+05     -2.301      0.021   -1.01e+06   -8.11e+04
+metro_station_Perovo                     -2.694e+05   2.08e+05     -1.294      0.196   -6.78e+05    1.39e+05
+metro_station_Pervomayskaya              -3.881e+05    2.2e+05     -1.765      0.078   -8.19e+05    4.29e+04
+metro_station_Pionerskaya                 1.967e+04   2.23e+05      0.088      0.930   -4.18e+05    4.57e+05
+metro_station_Ploshchad Ilyicha          -5.949e+05    2.4e+05     -2.482      0.013   -1.06e+06   -1.25e+05
+metro_station_Ploshchad Revolyutsii      -6.057e+05   2.32e+05     -2.614      0.009   -1.06e+06   -1.51e+05
+metro_station_Polezhaevskaya              5.087e+05   2.23e+05      2.278      0.023    7.11e+04    9.46e+05
+metro_station_Polyanka                     2.03e+04   2.33e+05      0.087      0.931   -4.37e+05    4.78e+05
+metro_station_Preobrazhenskaya Ploshchad  2.625e+05   2.13e+05      1.231      0.218   -1.56e+05    6.81e+05
+metro_station_Profsoyuznaya              -2.398e+05    2.1e+05     -1.142      0.253   -6.51e+05    1.72e+05
+metro_station_Proletarskaya              -5.459e+05   2.44e+05     -2.234      0.025   -1.02e+06    -6.7e+04
+metro_station_Prospekt Mira              -2.359e+05    2.2e+05     -1.072      0.284   -6.67e+05    1.95e+05
+metro_station_Prospekt Vernadskogo        4.563e+05   2.14e+05      2.130      0.033    3.64e+04    8.76e+05
+metro_station_Pushkinskaya                3.429e+05   2.31e+05      1.484      0.138    -1.1e+05    7.96e+05
+metro_station_Pyatnitskoye Shosse        -1.168e+06    2.2e+05     -5.320      0.000    -1.6e+06   -7.38e+05
+metro_station_Rechnoy Vokzal             -1.423e+06   1.97e+05     -7.214      0.000   -1.81e+06   -1.04e+06
+metro_station_Rimskaya                   -1.001e+06   2.34e+05     -4.284      0.000   -1.46e+06   -5.43e+05
+metro_station_Rizhskaya                  -4.424e+05   2.25e+05     -1.964      0.050   -8.84e+05    -869.616
+metro_station_Sapyornoye Pole             2.056e+05   2.18e+05      0.942      0.346   -2.22e+05    6.33e+05
+metro_station_Semyonovskaya              -2.422e+05   2.32e+05     -1.042      0.297   -6.98e+05    2.13e+05
+metro_station_Serpukhovskaya             -6.356e+04   2.33e+05     -0.273      0.785    -5.2e+05    3.93e+05
+metro_station_Sevastopolskaya            -6.156e+05    2.1e+05     -2.929      0.003   -1.03e+06   -2.04e+05
+metro_station_Shabolovskaya               6.836e+04   2.32e+05      0.295      0.768   -3.86e+05    5.22e+05
+metro_station_Shchukinskaya              -1.298e+05   2.07e+05     -0.628      0.530   -5.35e+05    2.76e+05
+metro_station_Shchyolkovskaya            -3.144e+05    2.1e+05     -1.500      0.134   -7.25e+05    9.65e+04
+metro_station_Shosse Entuziastov          -4.36e+05    2.4e+05     -1.819      0.069   -9.06e+05    3.37e+04
+metro_station_Slavyansky Bulvar          -1.024e+05   2.21e+05     -0.463      0.644   -5.36e+05    3.31e+05
+metro_station_Smolenskaya (AP)            7.053e+05   2.35e+05      3.004      0.003    2.45e+05    1.17e+06
+metro_station_Smolenskaya (F)             2.294e+05    2.3e+05      0.999      0.318   -2.21e+05    6.79e+05
+metro_station_Sokol                       7.657e+05   2.07e+05      3.701      0.000     3.6e+05    1.17e+06
+metro_station_Sokolniki                  -6.666e+04    2.2e+05     -0.303      0.762   -4.98e+05    3.65e+05
+metro_station_Sportivnaya                 3.066e+05   2.31e+05      1.328      0.184   -1.46e+05    7.59e+05
+metro_station_Sretensky Bulvar           -4.776e+05   2.36e+05     -2.024      0.043    -9.4e+05    -1.5e+04
+metro_station_Strogino                    9.735e+05   2.15e+05      4.520      0.000    5.51e+05     1.4e+06
+metro_station_Studencheskaya              3.712e+05   2.34e+05      1.588      0.112   -8.68e+04    8.29e+05
+metro_station_Sukharevskaya              -3.412e+05   2.36e+05     -1.448      0.148   -8.03e+05    1.21e+05
+metro_station_Sviblovo                   -7.289e+05      2e+05     -3.641      0.000   -1.12e+06   -3.37e+05
+metro_station_Taganskaya                 -8.497e+05   2.32e+05     -3.666      0.000    -1.3e+06   -3.95e+05
+metro_station_Teatralnaya                -2.002e+05   2.34e+05     -0.855      0.393   -6.59e+05    2.59e+05
+metro_station_Tekstilshchiki             -3.308e+05   2.45e+05     -1.353      0.176    -8.1e+05    1.49e+05
+metro_station_Timiryazevskaya            -4.539e+05   2.05e+05     -2.214      0.027   -8.56e+05    -5.2e+04
+metro_station_Tretyakovskaya              2.475e+05   2.33e+05      1.063      0.288   -2.09e+05    7.04e+05
+metro_station_Troparyovo                 -3.947e+05   2.14e+05     -1.842      0.065   -8.15e+05    2.53e+04
+metro_station_Trubnaya                   -3.336e+05   2.29e+05     -1.457      0.145   -7.82e+05    1.15e+05
+metro_station_Tsvetnoy Bulvar              1.18e+05   2.33e+05      0.506      0.613    -3.4e+05    5.76e+05
+metro_station_Tulskaya                    3.058e+05   2.26e+05      1.353      0.176   -1.37e+05    7.49e+05
+metro_station_Turgenevskaya              -3.709e+05   2.41e+05     -1.542      0.123   -8.42e+05    1.01e+05
+metro_station_Tverskaya                   3.727e+05   2.33e+05      1.603      0.109   -8.31e+04    8.28e+05
+metro_station_Tyoply Stan                -1.576e+06   2.04e+05     -7.736      0.000   -1.98e+06   -1.18e+06
+metro_station_Ugreshskaya                -6.832e+05   2.36e+05     -2.896      0.004   -1.15e+06   -2.21e+05
+metro_station_Ulitsa 1905 Goda            3.094e+04    2.3e+05      0.135      0.893   -4.19e+05    4.81e+05
+metro_station_Ulitsa Akademika Yangelya  -1.097e+06   2.04e+05     -5.382      0.000    -1.5e+06   -6.98e+05
+metro_station_Ulitsa Podbelskogo         -2.893e+05   2.18e+05     -1.325      0.185   -7.17e+05    1.39e+05
+metro_station_Universitet                 3.611e+05   2.16e+05      1.674      0.094   -6.16e+04    7.84e+05
+metro_station_VDNKh                      -4.289e+05   2.12e+05     -2.025      0.043   -8.44e+05   -1.39e+04
+metro_station_Voykovskaya                -4.291e+05   2.06e+05     -2.084      0.037   -8.33e+05   -2.55e+04
+metro_station_Vystavochnaya               1.165e+05   2.33e+05      0.501      0.616   -3.39e+05    5.72e+05
+metro_station_Yasenevo                   -4.701e+05   2.02e+05     -2.325      0.020   -8.66e+05   -7.37e+04
+metro_station_Yugo-Zapadnaya             -1.407e+05   2.12e+05     -0.663      0.507   -5.57e+05    2.75e+05
+metro_station_Yuzhnaya                     -1.1e+06   2.16e+05     -5.101      0.000   -1.52e+06   -6.77e+05
+==============================================================================
+Omnibus:                    10934.964   Durbin-Watson:                   2.000
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            71131.802
+Skew:                           0.926   Prob(JB):                         0.00
+Kurtosis:                       8.632   Cond. No.                     1.16e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.16e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

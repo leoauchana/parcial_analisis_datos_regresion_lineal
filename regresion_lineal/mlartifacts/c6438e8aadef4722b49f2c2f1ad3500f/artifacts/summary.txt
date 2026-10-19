@@ -1,0 +1,65 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           rent_per_sqm   R-squared:                       0.875
+Model:                            OLS   Adj. R-squared:                  0.874
+Method:                 Least Squares   F-statistic:                     2788.
+Date:                Sun, 18 Oct 2026   Prob (F-statistic):               0.00
+Time:                        20:54:38   Log-Likelihood:                 5493.3
+No. Observations:               15628   AIC:                        -1.091e+04
+Df Residuals:                   15588   BIC:                        -1.060e+04
+Df Model:                          39                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+const                                      66.2426      2.180     30.389      0.000      61.970      70.515
+total_area                                  0.0003      0.000      1.256      0.209      -0.000       0.001
+rooms                                      -0.0024      0.003     -0.711      0.477      -0.009       0.004
+total_floors                               -0.0001      0.000     -0.515      0.606      -0.001       0.000
+metro_distance_min                         -0.0008   2.07e-05    -36.785      0.000      -0.001      -0.001
+to_center_km                               -0.0180      0.000    -46.634      0.000      -0.019      -0.017
+lat                                        -0.6859      0.034    -20.398      0.000      -0.752      -0.620
+lon                                        -0.5427      0.018    -29.442      0.000      -0.579      -0.507
+deposit_months                              0.0019      0.003      0.770      0.441      -0.003       0.007
+furnished                                   0.0738      0.003     24.772      0.000       0.068       0.080
+pets_allowed                               -0.0237      0.003     -7.996      0.000      -0.030      -0.018
+okrug_NAO                                  -0.9270      0.011    -87.823      0.000      -0.948      -0.906
+okrug_SAO                                  -0.5706      0.008    -74.000      0.000      -0.586      -0.555
+okrug_SVAO                                 -0.5746      0.008    -69.449      0.000      -0.591      -0.558
+okrug_SZAO                                 -0.3912      0.009    -45.416      0.000      -0.408      -0.374
+okrug_TAO                                  -1.0015      0.018    -55.947      0.000      -1.037      -0.966
+okrug_VAO                                  -0.5683      0.008    -67.280      0.000      -0.585      -0.552
+okrug_YuAO                                 -0.7100      0.008    -93.751      0.000      -0.725      -0.695
+okrug_YuZAO                                -0.4548      0.008    -57.312      0.000      -0.470      -0.439
+okrug_ZAO                                  -0.4564      0.008    -58.419      0.000      -0.472      -0.441
+okrug_ZelAO                                -0.5461      0.022    -24.974      0.000      -0.589      -0.503
+renovation_designer                         0.2875      0.005     58.360      0.000       0.278       0.297
+renovation_euro                             0.1401      0.003     45.571      0.000       0.134       0.146
+renovation_no_renovation                   -0.1028      0.005    -21.827      0.000      -0.112      -0.094
+building_type_khrushchev                   -0.1988      0.005    -42.230      0.000      -0.208      -0.190
+building_type_modern_panel                 -0.0351      0.005     -7.644      0.000      -0.044      -0.026
+building_type_monolith                      0.0485      0.004     10.859      0.000       0.040       0.057
+building_type_panel                        -0.1151      0.004    -27.343      0.000      -0.123      -0.107
+building_type_stalin                        0.1296      0.007     18.112      0.000       0.116       0.144
+metro_line_Bolshaya Koltsevaya             -0.0459      0.010     -4.560      0.000      -0.066      -0.026
+metro_line_Filyovskaya                     -0.0137      0.006     -2.146      0.032      -0.026      -0.001
+metro_line_Kalininskaya                     0.0096      0.007      1.284      0.199      -0.005       0.024
+metro_line_Kaluzhsko-Rizhskaya             -0.0137      0.006     -2.421      0.015      -0.025      -0.003
+metro_line_Koltsevaya                      -0.0130      0.006     -2.073      0.038      -0.025      -0.001
+metro_line_Lyublinsko-Dmitrovskaya         -0.0379      0.007     -5.323      0.000      -0.052      -0.024
+metro_line_MCC                             -0.0181      0.012     -1.539      0.124      -0.041       0.005
+metro_line_Serpukhovsko-Timiryazevskaya    -0.0314      0.006     -5.543      0.000      -0.042      -0.020
+metro_line_Sokolnicheskaya                 -0.0082      0.006     -1.462      0.144      -0.019       0.003
+metro_line_Tagansko-Krasnopresnenskaya     -0.0194      0.007     -2.908      0.004      -0.032      -0.006
+metro_line_Zamoskvoretskaya                -0.0310      0.006     -5.131      0.000      -0.043      -0.019
+==============================================================================
+Omnibus:                       53.518   Durbin-Watson:                   1.999
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               48.005
+Skew:                           0.094   Prob(JB):                     3.77e-11
+Kurtosis:                       2.804   Cond. No.                     3.80e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.8e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

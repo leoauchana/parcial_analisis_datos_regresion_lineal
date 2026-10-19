@@ -1,0 +1,62 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           rent_per_sqm   R-squared:                       0.875
+Model:                            OLS   Adj. R-squared:                  0.874
+Method:                 Least Squares   F-statistic:                     3021.
+Date:                Sun, 18 Oct 2026   Prob (F-statistic):               0.00
+Time:                        21:02:43   Log-Likelihood:                 5492.6
+No. Observations:               15628   AIC:                        -1.091e+04
+Df Residuals:                   15591   BIC:                        -1.063e+04
+Df Model:                          36                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+const                                      66.3080      2.179     30.432      0.000      62.037      70.579
+total_area                                  0.0001      0.000      1.333      0.183   -6.71e-05       0.000
+metro_distance_min                         -0.0008   2.07e-05    -36.786      0.000      -0.001      -0.001
+to_center_km                               -0.0180      0.000    -46.676      0.000      -0.019      -0.017
+lat                                        -0.6867      0.034    -20.429      0.000      -0.753      -0.621
+lon                                        -0.5431      0.018    -29.470      0.000      -0.579      -0.507
+furnished                                   0.0738      0.003     24.778      0.000       0.068       0.080
+pets_allowed                               -0.0237      0.003     -7.994      0.000      -0.030      -0.018
+okrug_NAO                                  -0.9271      0.011    -87.838      0.000      -0.948      -0.906
+okrug_SAO                                  -0.5705      0.008    -73.999      0.000      -0.586      -0.555
+okrug_SVAO                                 -0.5745      0.008    -69.452      0.000      -0.591      -0.558
+okrug_SZAO                                 -0.3911      0.009    -45.418      0.000      -0.408      -0.374
+okrug_TAO                                  -1.0017      0.018    -55.963      0.000      -1.037      -0.967
+okrug_VAO                                  -0.5683      0.008    -67.290      0.000      -0.585      -0.552
+okrug_YuAO                                 -0.7100      0.008    -93.763      0.000      -0.725      -0.695
+okrug_YuZAO                                -0.4550      0.008    -57.345      0.000      -0.471      -0.439
+okrug_ZAO                                  -0.4566      0.008    -58.455      0.000      -0.472      -0.441
+okrug_ZelAO                                -0.5457      0.022    -24.964      0.000      -0.589      -0.503
+renovation_designer                         0.2875      0.005     58.386      0.000       0.278       0.297
+renovation_euro                             0.1401      0.003     45.572      0.000       0.134       0.146
+renovation_no_renovation                   -0.1028      0.005    -21.849      0.000      -0.112      -0.094
+building_type_khrushchev                   -0.1988      0.005    -42.245      0.000      -0.208      -0.190
+building_type_modern_panel                 -0.0351      0.005     -7.641      0.000      -0.044      -0.026
+building_type_monolith                      0.0485      0.004     10.863      0.000       0.040       0.057
+building_type_panel                        -0.1152      0.004    -27.356      0.000      -0.123      -0.107
+building_type_stalin                        0.1297      0.007     18.121      0.000       0.116       0.144
+metro_line_Bolshaya Koltsevaya             -0.0459      0.010     -4.561      0.000      -0.066      -0.026
+metro_line_Filyovskaya                     -0.0137      0.006     -2.150      0.032      -0.026      -0.001
+metro_line_Kalininskaya                     0.0096      0.007      1.289      0.197      -0.005       0.024
+metro_line_Kaluzhsko-Rizhskaya             -0.0137      0.006     -2.426      0.015      -0.025      -0.003
+metro_line_Koltsevaya                      -0.0131      0.006     -2.089      0.037      -0.025      -0.001
+metro_line_Lyublinsko-Dmitrovskaya         -0.0379      0.007     -5.331      0.000      -0.052      -0.024
+metro_line_MCC                             -0.0181      0.012     -1.546      0.122      -0.041       0.005
+metro_line_Serpukhovsko-Timiryazevskaya    -0.0314      0.006     -5.548      0.000      -0.043      -0.020
+metro_line_Sokolnicheskaya                 -0.0083      0.006     -1.470      0.142      -0.019       0.003
+metro_line_Tagansko-Krasnopresnenskaya     -0.0195      0.007     -2.923      0.003      -0.033      -0.006
+metro_line_Zamoskvoretskaya                -0.0311      0.006     -5.148      0.000      -0.043      -0.019
+==============================================================================
+Omnibus:                       53.467   Durbin-Watson:                   2.000
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               47.998
+Skew:                           0.094   Prob(JB):                     3.78e-11
+Kurtosis:                       2.804   Cond. No.                     3.80e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.8e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

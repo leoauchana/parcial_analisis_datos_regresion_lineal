@@ -1,0 +1,1 @@
+# Primer parcial de ANÁLISIS DE DATOS - Regresión Lineal

@@ -1,0 +1,178 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           rent_per_sqm   R-squared:                       0.943
+Model:                            OLS   Adj. R-squared:                  0.942
+Method:                 Least Squares   F-statistic:                     1682.
+Date:                Sun, 18 Oct 2026   Prob (F-statistic):               0.00
+Time:                        21:18:56   Log-Likelihood:                 11646.
+No. Observations:               15628   AIC:                        -2.299e+04
+Df Residuals:                   15475   BIC:                        -2.181e+04
+Df Model:                         152                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+const                                       0.6324      0.079      8.000      0.000       0.477       0.787
+metro_distance_min                         -0.0005   1.55e-05    -34.563      0.000      -0.001      -0.001
+to_center_km                               -0.0002      0.001     -0.278      0.781      -0.002       0.001
+furnished                                   0.0781      0.002     38.561      0.000       0.074       0.082
+pets_allowed                               -0.0245      0.002    -12.163      0.000      -0.028      -0.021
+log_alquiler_distrito_mes_ant               0.8605      0.011     79.978      0.000       0.839       0.882
+district_Akademichesky                      0.0295      0.015      1.925      0.054      -0.001       0.060
+district_Alekseevsky                       -0.0165      0.016     -1.063      0.288      -0.047       0.014
+district_Altufyevsky                       -0.0141      0.016     -0.877      0.381      -0.045       0.017
+district_Arbat                              0.1879      0.017     10.915      0.000       0.154       0.222
+district_Babushkinsky                       0.0279      0.016      1.752      0.080      -0.003       0.059
+district_Basmanny                           0.0966      0.016      6.166      0.000       0.066       0.127
+district_Begovoy                            0.1101      0.016      6.923      0.000       0.079       0.141
+district_Beskudnikovsky                    -0.0314      0.015     -2.036      0.042      -0.062      -0.001
+district_Bibirevo                           0.0039      0.016      0.248      0.804      -0.027       0.035
+district_Biryulyovo Vostochnoye            -0.0247      0.018     -1.355      0.175      -0.060       0.011
+district_Biryulyovo Zapadnoye              -0.0289      0.017     -1.660      0.097      -0.063       0.005
+district_Bogorodskoye                       0.0113      0.015      0.760      0.447      -0.018       0.041
+district_Brateyevo                         -0.0133      0.016     -0.844      0.399      -0.044       0.018
+district_Butyrsky                          -0.0122      0.016     -0.778      0.436      -0.043       0.018
+district_Chertanovo Severnoye               0.0574      0.016      3.704      0.000       0.027       0.088
+district_Chertanovo Tsentralnoye           -0.0418      0.016     -2.651      0.008      -0.073      -0.011
+district_Chertanovo Yuzhnoye                0.2196      0.017     12.810      0.000       0.186       0.253
+district_Cheryomushki                       0.2114      0.015     13.653      0.000       0.181       0.242
+district_Danilovsky                        -0.0095      0.015     -0.622      0.534      -0.040       0.021
+district_Desyonovskoye                      0.0084      0.022      0.384      0.701      -0.034       0.051
+district_Dmitrovsky                        -0.0215      0.016     -1.364      0.173      -0.052       0.009
+district_Donskoy                            0.0212      0.015      1.389      0.165      -0.009       0.051
+district_Dorogomilovo                       0.0805      0.016      5.105      0.000       0.050       0.111
+district_Fili-Davydkovo                     0.0589      0.015      3.837      0.000       0.029       0.089
+district_Filimonkovskoye                   -0.0007      0.022     -0.032      0.974      -0.044       0.042
+district_Filyovsky Park                     0.0567      0.015      3.699      0.000       0.027       0.087
+district_Gagarinsky                         0.0718      0.016      4.602      0.000       0.041       0.102
+district_Golovinsky                        -0.0124      0.015     -0.812      0.417      -0.042       0.018
+district_Golyanovo                          0.0144      0.016      0.917      0.359      -0.016       0.045
+district_Ivanovskoye                       -0.0353      0.017     -2.096      0.036      -0.068      -0.002
+district_Izmaylovo                          0.0033      0.015      0.216      0.829      -0.027       0.033
+district_Khamovniki                         0.1377      0.018      7.768      0.000       0.103       0.172
+district_Khoroshyovo-Mnyovniki             -0.0048      0.015     -0.324      0.746      -0.034       0.024
+district_Khoroshyovsky                      0.0574      0.015      3.751      0.000       0.027       0.087
+district_Khovrino                          -0.0225      0.016     -1.392      0.164      -0.054       0.009
+district_Kievsky                            0.2127      0.050      4.297      0.000       0.116       0.310
+district_Klyonovskoye                       0.1084      0.041      2.652      0.008       0.028       0.189
+district_Kokoshkino                         0.0063      0.023      0.272      0.785      -0.039       0.052
+district_Konkovo                           -0.0141      0.016     -0.886      0.376      -0.045       0.017
+district_Koptevo                           -0.0189      0.015     -1.252      0.211      -0.049       0.011
+district_Kosino-Ukhtomsky                  -0.0284      0.017     -1.664      0.096      -0.062       0.005
+district_Kotlovka                           0.0359      0.015      2.404      0.016       0.007       0.065
+district_Krasnopakhorskoye                  0.0373      0.031      1.208      0.227      -0.023       0.098
+district_Krasnoselsky                       0.1323      0.016      8.311      0.000       0.101       0.163
+district_Krylatskoye                        0.0515      0.015      3.381      0.001       0.022       0.081
+district_Kuntsevo                           0.0061      0.016      0.391      0.696      -0.024       0.037
+district_Kurkino                            0.0384      0.018      2.177      0.030       0.004       0.073
+district_Levoberezhny                       0.0563      0.016      3.595      0.000       0.026       0.087
+district_Lianozovo                          0.0018      0.017      0.107      0.915      -0.032       0.035
+district_Lomonosovsky                       0.1055      0.016      6.726      0.000       0.075       0.136
+district_Losinoostrovsky                   -0.0035      0.016     -0.218      0.827      -0.035       0.028
+district_Marfino                           -0.0386      0.015     -2.557      0.011      -0.068      -0.009
+district_Marushkinskoye                     0.0234      0.024      0.975      0.330      -0.024       0.071
+district_Maryina Roshcha                    0.0032      0.015      0.212      0.832      -0.026       0.033
+district_Meshchansky                        0.1618      0.016      9.836      0.000       0.130       0.194
+district_Metrogorodok                      -0.0203      0.015     -1.317      0.188      -0.051       0.010
+district_Mikhaylovo-Yartsevskoye            0.0682      0.035      1.946      0.052      -0.001       0.137
+district_Mitino                             0.1475      0.017      8.580      0.000       0.114       0.181
+district_Molzhaninovsky                     0.0363      0.021      1.750      0.080      -0.004       0.077
+district_Moskovsky                         -0.0016      0.020     -0.081      0.936      -0.041       0.037
+district_Moskvorechye-Saburovo             -0.0054      0.015     -0.362      0.718      -0.035       0.024
+district_Mosrentgen                         0.0391      0.018      2.136      0.033       0.003       0.075
+district_Mozhaysky                          0.0184      0.016      1.173      0.241      -0.012       0.049
+district_Nagatino-Sadovniki                -0.0063      0.015     -0.427      0.669      -0.035       0.023
+district_Nagatinsky Zaton                  -0.0346      0.015     -2.313      0.021      -0.064      -0.005
+district_Nagorny                            0.0945      0.016      5.820      0.000       0.063       0.126
+district_Novo-Peredelkino                   0.0206      0.018      1.120      0.263      -0.015       0.057
+district_Novofyodorovskoye                  0.1769      0.047      3.800      0.000       0.086       0.268
+district_Novogireyevo                       0.1149      0.016      7.303      0.000       0.084       0.146
+district_Novokosino                        -0.0320      0.016     -1.999      0.046      -0.063      -0.001
+district_Obruchevsky                        0.0618      0.015      4.118      0.000       0.032       0.091
+district_Ochakovo-Matveyevskoye            -0.0066      0.015     -0.442      0.659      -0.036       0.023
+district_Orekhovo-Borisovo Severnoye       -0.0268      0.016     -1.649      0.099      -0.059       0.005
+district_Orekhovo-Borisovo Yuzhnoye        -0.0260      0.017     -1.517      0.129      -0.060       0.008
+district_Ostankinsky                        0.0019      0.016      0.117      0.907      -0.029       0.033
+district_Otradnoye                         -0.0200      0.015     -1.311      0.190      -0.050       0.010
+district_Perovo                             0.2199      0.016     13.828      0.000       0.189       0.251
+district_Pervomayskoye                      0.0903      0.036      2.540      0.011       0.021       0.160
+district_Pokrovskoye-Streshnevo             0.0180      0.015      1.181      0.237      -0.012       0.048
+district_Preobrazhenskoye                   0.1862      0.016     11.701      0.000       0.155       0.217
+district_Presnensky                         0.1953      0.017     11.348      0.000       0.162       0.229
+district_Prospekt Vernadskogo               0.1074      0.016      6.688      0.000       0.076       0.139
+district_Ramenki                            0.0252      0.015      1.669      0.095      -0.004       0.055
+district_Rogovskoye                         0.1813      0.048      3.789      0.000       0.088       0.275
+district_Rostokino                         -0.0032      0.015     -0.215      0.830      -0.033       0.026
+district_Ryazanovskoye                      0.0262      0.025      1.054      0.292      -0.023       0.075
+district_Savyolovsky                        0.0147      0.015      0.960      0.337      -0.015       0.045
+district_Severnoye Butovo                  -0.0018      0.017     -0.108      0.914      -0.035       0.031
+district_Severnoye Izmaylovo                0.1364      0.017      8.261      0.000       0.104       0.169
+district_Severnoye Medvedkovo              -0.0087      0.016     -0.548      0.584      -0.040       0.022
+district_Severnoye Tushino                  0.0134      0.016      0.826      0.409      -0.018       0.045
+district_Severny                            0.0245      0.018      1.349      0.177      -0.011       0.060
+district_Shchapovskoye                      0.0446      0.033      1.367      0.172      -0.019       0.109
+district_Shcherbinka                        0.0223      0.022      0.991      0.322      -0.022       0.066
+district_Shchukino                          0.1660      0.016     10.685      0.000       0.136       0.196
+district_Sokol                              0.1228      0.015      8.007      0.000       0.093       0.153
+district_Sokolinaya Gora                    0.0126      0.015      0.839      0.402      -0.017       0.042
+district_Sokolniki                          0.0803      0.015      5.273      0.000       0.050       0.110
+district_Solntsevo                          0.0201      0.016      1.221      0.222      -0.012       0.052
+district_Sosenskoye                         0.0059      0.021      0.285      0.775      -0.035       0.046
+district_Strogino                           0.2835      0.017     16.720      0.000       0.250       0.317
+district_Sviblovo                           0.0944      0.016      5.926      0.000       0.063       0.126
+district_Tagansky                           0.0911      0.016      5.677      0.000       0.060       0.123
+district_Timiryazevsky                      0.0581      0.015      3.821      0.000       0.028       0.088
+district_Troitsk                            0.0197      0.028      0.703      0.482      -0.035       0.075
+district_Troparyovo-Nikulino                0.1467      0.016      9.048      0.000       0.115       0.179
+district_Tsaritsyno                        -0.0048      0.016     -0.291      0.771      -0.037       0.027
+district_Tverskoy                           0.2308      0.018     13.020      0.000       0.196       0.266
+district_Tyoply Stan                        0.0580      0.016      3.627      0.000       0.027       0.089
+district_Veshnyaki                         -0.0359      0.017     -2.139      0.032      -0.069      -0.003
+district_Vnukovo                            0.0567      0.020      2.858      0.004       0.018       0.096
+district_Vnukovskoye                        0.0123      0.019      0.634      0.526      -0.026       0.050
+district_Voronovskoye                       0.1457      0.042      3.466      0.001       0.063       0.228
+district_Voskresenskoye                    -0.0291      0.020     -1.471      0.141      -0.068       0.010
+district_Vostochnoye Izmaylovo             -0.0035      0.016     -0.221      0.825      -0.034       0.027
+district_Vostochny                         -0.0376      0.017     -2.236      0.025      -0.071      -0.005
+district_Voykovsky                          0.1011      0.015      6.782      0.000       0.072       0.130
+district_Yakimanka                          0.1772      0.018      9.949      0.000       0.142       0.212
+district_Yaroslavsky                       -0.0014      0.016     -0.085      0.932      -0.033       0.031
+district_Yasenevo                           0.2765      0.017     16.471      0.000       0.244       0.309
+district_Yuzhnoye Butovo                    0.0274      0.019      1.416      0.157      -0.011       0.065
+district_Yuzhnoye Medvedkovo               -0.0188      0.016     -1.204      0.229      -0.049       0.012
+district_Yuzhnoye Tushino                  -0.0220      0.016     -1.416      0.157      -0.053       0.008
+district_Zamoskvorechye                     0.1623      0.017      9.525      0.000       0.129       0.196
+district_Zapadnoye Degunino                -0.0331      0.016     -2.112      0.035      -0.064      -0.002
+district_Zelenograd                         0.0597      0.028      2.132      0.033       0.005       0.115
+district_Zyablikovo                        -0.0046      0.017     -0.274      0.784      -0.037       0.028
+district_Zyuzino                            0.0443      0.015      2.963      0.003       0.015       0.074
+renovation_designer                         0.2992      0.003     89.412      0.000       0.293       0.306
+renovation_euro                             0.1434      0.002     68.661      0.000       0.139       0.147
+renovation_no_renovation                   -0.1049      0.003    -32.801      0.000      -0.111      -0.099
+building_type_khrushchev                   -0.2053      0.003    -64.178      0.000      -0.212      -0.199
+building_type_modern_panel                 -0.0422      0.003    -13.540      0.000      -0.048      -0.036
+building_type_monolith                      0.0492      0.003     16.224      0.000       0.043       0.055
+building_type_panel                        -0.1224      0.003    -42.783      0.000      -0.128      -0.117
+building_type_stalin                        0.1333      0.005     27.421      0.000       0.124       0.143
+metro_line_Bolshaya Koltsevaya             -0.0128      0.007     -1.839      0.066      -0.026       0.001
+metro_line_Filyovskaya                     -0.0144      0.004     -3.242      0.001      -0.023      -0.006
+metro_line_Kalininskaya                     0.0032      0.006      0.577      0.564      -0.008       0.014
+metro_line_Kaluzhsko-Rizhskaya             -0.0047      0.004     -1.178      0.239      -0.013       0.003
+metro_line_Koltsevaya                       0.0015      0.004      0.348      0.728      -0.007       0.010
+metro_line_Lyublinsko-Dmitrovskaya         -0.0159      0.005     -3.217      0.001      -0.026      -0.006
+metro_line_MCC                             -0.0251      0.008     -3.133      0.002      -0.041      -0.009
+metro_line_Serpukhovsko-Timiryazevskaya    -0.0092      0.004     -2.324      0.020      -0.017      -0.001
+metro_line_Sokolnicheskaya                 -0.0083      0.004     -2.081      0.037      -0.016      -0.000
+metro_line_Tagansko-Krasnopresnenskaya     -0.0116      0.005     -2.478      0.013      -0.021      -0.002
+metro_line_Zamoskvoretskaya                -0.0056      0.004     -1.313      0.189      -0.014       0.003
+==============================================================================
+Omnibus:                       21.506   Durbin-Watson:                   1.991
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.286
+Skew:                           0.057   Prob(JB):                     8.78e-06
+Kurtosis:                       3.151   Cond. No.                     4.09e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.09e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

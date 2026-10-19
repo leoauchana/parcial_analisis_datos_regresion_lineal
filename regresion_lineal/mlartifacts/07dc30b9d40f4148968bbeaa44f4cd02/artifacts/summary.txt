@@ -1,0 +1,167 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              price_rub   R-squared:                       0.878
+Model:                            OLS   Adj. R-squared:                  0.878
+Method:                 Least Squares   F-statistic:                     2468.
+Date:                Sat, 17 Oct 2026   Prob (F-statistic):               0.00
+Time:                        19:47:47   Log-Likelihood:            -7.8839e+05
+No. Observations:               48564   AIC:                         1.577e+06
+Df Residuals:                   48422   BIC:                         1.578e+06
+Df Model:                         141                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                 4.895e+05   1.75e+05      2.797      0.005    1.46e+05    8.32e+05
+total_area                            1.773e+05    741.038    239.263      0.000    1.76e+05    1.79e+05
+to_center_km                         -8.959e+04   9859.267     -9.086      0.000   -1.09e+05   -7.03e+04
+metro_distance_min                   -2.313e+04    666.252    -34.715      0.000   -2.44e+04   -2.18e+04
+mortgage_rate_at_listing              2.059e+05   2166.312     95.031      0.000    2.02e+05     2.1e+05
+renovation_designer                    3.81e+06    4.5e+04     84.630      0.000    3.72e+06     3.9e+06
+renovation_euro                       1.742e+06   2.99e+04     58.257      0.000    1.68e+06     1.8e+06
+renovation_no_renovation             -1.253e+06   3.35e+04    -37.403      0.000   -1.32e+06   -1.19e+06
+building_type_khrushchev             -2.453e+06   4.32e+04    -56.823      0.000   -2.54e+06   -2.37e+06
+building_type_modern_panel           -5.627e+05   4.04e+04    -13.937      0.000   -6.42e+05   -4.84e+05
+building_type_monolith                5.587e+05   4.05e+04     13.789      0.000    4.79e+05    6.38e+05
+building_type_panel                  -1.501e+06   4.01e+04    -37.381      0.000   -1.58e+06   -1.42e+06
+building_type_stalin                  2.034e+06   5.62e+04     36.164      0.000    1.92e+06    2.14e+06
+metro_distance_type_walk              1.956e+06      4e+04     48.879      0.000    1.88e+06    2.03e+06
+district_Akademichesky                2.772e+06   1.94e+05     14.267      0.000    2.39e+06    3.15e+06
+district_Alekseevsky                 -4.389e+05   1.99e+05     -2.204      0.028   -8.29e+05   -4.85e+04
+district_Altufyevsky                 -3.142e+06   2.08e+05    -15.115      0.000   -3.55e+06   -2.73e+06
+district_Arbat                        1.787e+07   2.06e+05     86.861      0.000    1.75e+07    1.83e+07
+district_Babushkinsky                 -2.57e+06   2.03e+05    -12.670      0.000   -2.97e+06   -2.17e+06
+district_Basmanny                     9.642e+06   1.99e+05     48.338      0.000    9.25e+06       1e+07
+district_Begovoy                      1.789e+06   1.97e+05      9.080      0.000     1.4e+06    2.18e+06
+district_Beskudnikovsky              -3.084e+06   2.08e+05    -14.835      0.000   -3.49e+06   -2.68e+06
+district_Bibirevo                        -3e+06   2.05e+05    -14.616      0.000    -3.4e+06    -2.6e+06
+district_Biryulyovo Vostochnoye      -3.744e+06   2.25e+05    -16.643      0.000   -4.18e+06    -3.3e+06
+district_Biryulyovo Zapadnoye        -3.634e+06    2.2e+05    -16.510      0.000   -4.07e+06    -3.2e+06
+district_Bogorodskoye                -2.634e+06   1.99e+05    -13.223      0.000   -3.02e+06   -2.24e+06
+district_Brateyevo                   -3.868e+06   2.07e+05    -18.648      0.000   -4.27e+06   -3.46e+06
+district_Butyrsky                    -1.183e+06   2.02e+05     -5.870      0.000   -1.58e+06   -7.88e+05
+district_Chertanovo Severnoye        -2.652e+06      2e+05    -13.242      0.000   -3.04e+06   -2.26e+06
+district_Chertanovo Tsentralnoye     -3.518e+06   2.08e+05    -16.954      0.000   -3.92e+06   -3.11e+06
+district_Chertanovo Yuzhnoye          -3.07e+06   2.18e+05    -14.053      0.000    -3.5e+06   -2.64e+06
+district_Cheryomushki                 2.945e+06   1.99e+05     14.782      0.000    2.55e+06    3.34e+06
+district_Danilovsky                    6.84e+04   2.07e+05      0.330      0.741   -3.38e+05    4.75e+05
+district_Desyonovskoye               -3.954e+06   2.78e+05    -14.209      0.000    -4.5e+06   -3.41e+06
+district_Dmitrovsky                  -3.336e+06   2.11e+05    -15.813      0.000   -3.75e+06   -2.92e+06
+district_Donskoy                      4.931e+05   2.11e+05      2.334      0.020    7.91e+04    9.07e+05
+district_Dorogomilovo                  7.66e+06   2.05e+05     37.377      0.000    7.26e+06    8.06e+06
+district_Fili-Davydkovo               2.892e+06   1.96e+05     14.726      0.000    2.51e+06    3.28e+06
+district_Filimonkovskoye             -4.964e+06   2.68e+05    -18.517      0.000   -5.49e+06   -4.44e+06
+district_Filyovsky Park               3.512e+06   1.97e+05     17.850      0.000    3.13e+06     3.9e+06
+district_Gagarinsky                   4.806e+06   2.04e+05     23.579      0.000    4.41e+06    5.21e+06
+district_Golovinsky                  -2.546e+06      2e+05    -12.720      0.000   -2.94e+06   -2.15e+06
+district_Golyanovo                    -3.57e+06   2.05e+05    -17.430      0.000   -3.97e+06   -3.17e+06
+district_Ivanovskoye                 -3.392e+06   2.04e+05    -16.598      0.000   -3.79e+06   -2.99e+06
+district_Izmaylovo                   -1.608e+06      2e+05     -8.045      0.000      -2e+06   -1.22e+06
+district_Khamovniki                   1.882e+07   2.04e+05     92.308      0.000    1.84e+07    1.92e+07
+district_Khoroshyovo-Mnyovniki        1.284e+06   2.02e+05      6.348      0.000    8.88e+05    1.68e+06
+district_Khoroshyovsky                2.272e+06   2.01e+05     11.296      0.000    1.88e+06    2.67e+06
+district_Khovrino                    -3.159e+06   2.13e+05    -14.849      0.000   -3.58e+06   -2.74e+06
+district_Kievsky                      2.045e+05    6.4e+05      0.320      0.749   -1.05e+06    1.46e+06
+district_Klyonovskoye                -1.875e+06    5.2e+05     -3.608      0.000   -2.89e+06   -8.56e+05
+district_Kokoshkino                  -4.531e+06   2.89e+05    -15.663      0.000    -5.1e+06   -3.96e+06
+district_Konkovo                      3.541e+05   2.04e+05      1.739      0.082   -4.49e+04    7.53e+05
+district_Koptevo                     -2.103e+06   2.05e+05    -10.243      0.000   -2.51e+06    -1.7e+06
+district_Kosino-Ukhtomsky             -3.93e+06   2.09e+05    -18.850      0.000   -4.34e+06   -3.52e+06
+district_Kotlovka                     1.151e+06   1.99e+05      5.788      0.000    7.61e+05    1.54e+06
+district_Krasnopakhorskoye            -3.86e+06   3.85e+05    -10.018      0.000   -4.61e+06    -3.1e+06
+district_Krasnoselsky                 8.695e+06   2.04e+05     42.522      0.000    8.29e+06     9.1e+06
+district_Krylatskoye                  3.289e+06   2.09e+05     15.727      0.000    2.88e+06     3.7e+06
+district_Kuntsevo                     1.073e+06   2.03e+05      5.272      0.000    6.74e+05    1.47e+06
+district_Kurkino                      9.231e+05   2.36e+05      3.914      0.000    4.61e+05    1.39e+06
+district_Levoberezhny                -2.015e+06   2.08e+05     -9.691      0.000   -2.42e+06   -1.61e+06
+district_Lianozovo                   -3.136e+06   2.18e+05    -14.405      0.000   -3.56e+06   -2.71e+06
+district_Lomonosovsky                 4.579e+06   1.98e+05     23.166      0.000    4.19e+06    4.97e+06
+district_Losinoostrovsky             -2.708e+06   2.06e+05    -13.144      0.000   -3.11e+06    -2.3e+06
+district_Marfino                     -2.766e+06      2e+05    -13.820      0.000   -3.16e+06   -2.37e+06
+district_Marushkinskoye              -4.508e+06   3.05e+05    -14.772      0.000   -5.11e+06   -3.91e+06
+district_Maryina Roshcha             -4.716e+05   2.13e+05     -2.216      0.027   -8.89e+05   -5.44e+04
+district_Meshchansky                  1.089e+07   2.01e+05     54.107      0.000    1.05e+07    1.13e+07
+district_Metrogorodok                -3.542e+06   2.02e+05    -17.509      0.000   -3.94e+06   -3.15e+06
+district_Mikhaylovo-Yartsevskoye     -3.222e+06   4.36e+05     -7.397      0.000   -4.08e+06   -2.37e+06
+district_Mitino                      -1.106e+06    2.3e+05     -4.807      0.000   -1.56e+06   -6.55e+05
+district_Molzhaninovsky              -3.153e+06   2.68e+05    -11.762      0.000   -3.68e+06   -2.63e+06
+district_Moskovsky                   -3.852e+06    2.6e+05    -14.805      0.000   -4.36e+06   -3.34e+06
+district_Moskvorechye-Saburovo       -2.867e+06      2e+05    -14.304      0.000   -3.26e+06   -2.47e+06
+district_Mosrentgen                  -4.971e+06   2.32e+05    -21.454      0.000   -5.42e+06   -4.52e+06
+district_Mozhaysky                    2.425e+05   2.09e+05      1.157      0.247   -1.68e+05    6.53e+05
+district_Nagatino-Sadovniki          -1.754e+06   2.03e+05     -8.636      0.000   -2.15e+06   -1.36e+06
+district_Nagatinsky Zaton            -1.397e+06   1.99e+05     -7.019      0.000   -1.79e+06   -1.01e+06
+district_Nagorny                      -1.16e+06   2.04e+05     -5.683      0.000   -1.56e+06    -7.6e+05
+district_Novo-Peredelkino            -1.947e+06   2.33e+05     -8.371      0.000    -2.4e+06   -1.49e+06
+district_Novofyodorovskoye           -5.389e+05   5.99e+05     -0.899      0.369   -1.71e+06    6.36e+05
+district_Novogireyevo                -2.728e+06   2.01e+05    -13.595      0.000   -3.12e+06   -2.33e+06
+district_Novokosino                   -3.05e+06   2.09e+05    -14.616      0.000   -3.46e+06   -2.64e+06
+district_Obruchevsky                  1.575e+06   2.02e+05      7.796      0.000    1.18e+06    1.97e+06
+district_Ochakovo-Matveyevskoye       2.664e+05   2.03e+05      1.309      0.191   -1.32e+05    6.65e+05
+district_Orekhovo-Borisovo Severnoye  -3.78e+06   2.11e+05    -17.923      0.000   -4.19e+06   -3.37e+06
+district_Orekhovo-Borisovo Yuzhnoye  -3.663e+06   2.12e+05    -17.263      0.000   -4.08e+06   -3.25e+06
+district_Ostankinsky                 -6.431e+05   2.02e+05     -3.184      0.001   -1.04e+06   -2.47e+05
+district_Otradnoye                   -2.591e+06   2.03e+05    -12.778      0.000   -2.99e+06   -2.19e+06
+district_Perovo                      -1.753e+06   2.02e+05     -8.697      0.000   -2.15e+06   -1.36e+06
+district_Pervomayskoye               -2.937e+06   4.51e+05     -6.507      0.000   -3.82e+06   -2.05e+06
+district_Pokrovskoye-Streshnevo      -1.621e+05   2.04e+05     -0.795      0.427   -5.62e+05    2.37e+05
+district_Preobrazhenskoye            -9.075e+05   2.02e+05     -4.484      0.000    -1.3e+06   -5.11e+05
+district_Presnensky                   1.631e+07   2.03e+05     80.166      0.000    1.59e+07    1.67e+07
+district_Prospekt Vernadskogo          5.03e+06      2e+05     25.139      0.000    4.64e+06    5.42e+06
+district_Ramenki                      4.796e+06      2e+05     24.034      0.000    4.41e+06    5.19e+06
+district_Rogovskoye                  -1.392e+05   6.21e+05     -0.224      0.823   -1.36e+06    1.08e+06
+district_Rostokino                   -2.799e+06   1.96e+05    -14.295      0.000   -3.18e+06   -2.42e+06
+district_Ryazanovskoye               -4.089e+06   3.14e+05    -13.002      0.000   -4.71e+06   -3.47e+06
+district_Savyolovsky                  8.166e+05   2.02e+05      4.037      0.000     4.2e+05    1.21e+06
+district_Severnoye Butovo            -1.529e+06   2.29e+05     -6.691      0.000   -1.98e+06   -1.08e+06
+district_Severnoye Izmaylovo         -2.254e+06   2.06e+05    -10.939      0.000   -2.66e+06   -1.85e+06
+district_Severnoye Medvedkovo        -2.543e+06   2.07e+05    -12.279      0.000   -2.95e+06   -2.14e+06
+district_Severnoye Tushino           -1.402e+06   2.11e+05     -6.631      0.000   -1.82e+06   -9.87e+05
+district_Severny                     -3.484e+06    2.3e+05    -15.154      0.000   -3.93e+06   -3.03e+06
+district_Shchapovskoye                -4.11e+06   4.04e+05    -10.171      0.000    -4.9e+06   -3.32e+06
+district_Shcherbinka                 -3.913e+06   2.87e+05    -13.644      0.000   -4.48e+06   -3.35e+06
+district_Shchukino                    2.479e+06   2.03e+05     12.219      0.000    2.08e+06    2.88e+06
+district_Sokol                         1.86e+06   1.98e+05      9.385      0.000    1.47e+06    2.25e+06
+district_Sokolinaya Gora             -3.013e+06   1.99e+05    -15.128      0.000    -3.4e+06   -2.62e+06
+district_Sokolniki                   -3.223e+05   2.09e+05     -1.541      0.123   -7.32e+05    8.75e+04
+district_Solntsevo                   -1.253e+06   2.22e+05     -5.650      0.000   -1.69e+06   -8.18e+05
+district_Sosenskoye                  -3.867e+06   2.63e+05    -14.724      0.000   -4.38e+06   -3.35e+06
+district_Strogino                     3.807e+06   2.15e+05     17.677      0.000    3.38e+06    4.23e+06
+district_Sviblovo                    -2.583e+06      2e+05    -12.893      0.000   -2.98e+06   -2.19e+06
+district_Tagansky                     8.928e+06   2.03e+05     43.925      0.000    8.53e+06    9.33e+06
+district_Timiryazevsky               -4.103e+05   1.94e+05     -2.113      0.035   -7.91e+05   -2.97e+04
+district_Troitsk                     -3.698e+06   3.53e+05    -10.462      0.000   -4.39e+06      -3e+06
+district_Troparyovo-Nikulino          3.604e+06    2.1e+05     17.155      0.000    3.19e+06    4.02e+06
+district_Tsaritsyno                  -3.534e+06   2.07e+05    -17.065      0.000   -3.94e+06   -3.13e+06
+district_Tverskoy                     1.797e+07   2.05e+05     87.477      0.000    1.76e+07    1.84e+07
+district_Tyoply Stan                 -3.339e+05   2.14e+05     -1.564      0.118   -7.52e+05    8.46e+04
+district_Veshnyaki                   -4.253e+06   2.02e+05    -21.040      0.000   -4.65e+06   -3.86e+06
+district_Vnukovo                     -1.575e+06   2.65e+05     -5.943      0.000    -2.1e+06   -1.06e+06
+district_Vnukovskoye                  -4.06e+06   2.52e+05    -16.113      0.000   -4.55e+06   -3.57e+06
+district_Voronovskoye                -1.242e+06   5.37e+05     -2.313      0.021    -2.3e+06    -1.9e+05
+district_Voskresenskoye              -4.569e+06   2.54e+05    -17.960      0.000   -5.07e+06   -4.07e+06
+district_Vostochnoye Izmaylovo       -2.736e+06   2.06e+05    -13.297      0.000   -3.14e+06   -2.33e+06
+district_Vostochny                   -3.984e+06   2.19e+05    -18.179      0.000   -4.41e+06   -3.55e+06
+district_Voykovsky                   -8.855e+05   1.97e+05     -4.501      0.000   -1.27e+06      -5e+05
+district_Yakimanka                    1.617e+07   2.05e+05     79.051      0.000    1.58e+07    1.66e+07
+district_Yaroslavsky                 -2.955e+06    2.1e+05    -14.040      0.000   -3.37e+06   -2.54e+06
+district_Yasenevo                     1.911e+06   2.16e+05      8.831      0.000    1.49e+06    2.34e+06
+district_Yuzhnoye Butovo             -1.659e+06   2.54e+05     -6.534      0.000   -2.16e+06   -1.16e+06
+district_Yuzhnoye Medvedkovo         -3.019e+06   2.05e+05    -14.733      0.000   -3.42e+06   -2.62e+06
+district_Yuzhnoye Tushino              -6.9e+05    2.1e+05     -3.283      0.001    -1.1e+06   -2.78e+05
+district_Zamoskvorechye               1.242e+07   2.02e+05     61.351      0.000     1.2e+07    1.28e+07
+district_Zapadnoye Degunino          -3.439e+06   2.07e+05    -16.616      0.000   -3.84e+06   -3.03e+06
+district_Zelenograd                  -2.668e+06    3.6e+05     -7.415      0.000   -3.37e+06   -1.96e+06
+district_Zyablikovo                  -3.468e+06   2.18e+05    -15.875      0.000    -3.9e+06   -3.04e+06
+district_Zyuzino                      3.389e+05   2.01e+05      1.687      0.092   -5.49e+04    7.33e+05
+==============================================================================
+Omnibus:                    11326.636   Durbin-Watson:                   1.990
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           105843.026
+Skew:                           0.858   Prob(JB):                         0.00
+Kurtosis:                      10.026   Cond. No.                     1.69e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.69e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
