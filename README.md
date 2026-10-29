@@ -54,8 +54,22 @@ Se utilizó el dataset público de Kaggle: [`sergionefedov/moscow-real-estate-sa
 ### 5. Incorporación del Panel Mensual sin Fuga de Información (*No Data Leakage*)
 - Desde `district_prices_monthly.csv` se computó el logaritmo del precio promedio del distrito correspondiente al mes calendario previo.
 - Permite capturar la inflación inmobiliaria, los shocks macroeconómicos y la prima geográfica específica del momento, utilizando exclusivamente información disponible al publicarse el anuncio.
+- Se evaluó en ventas junto con la agrupación de distritos de la sección siguiente (R² 0.960 con la variante que lo incluye; ver MLflow). **El modelo final de ventas reportado en este README se ajusta sin el panel**; el panel se mantiene en el modelo de alquileres.
 
-### 6. Modelo de Alquileres
+### 6. Agrupación de Distritos por Nivel de Precio dentro de cada Okrug
+Usar `district` como variable categórica agrega más de 100 dummies (cond_no ≈ 16.700 en los modelos con distrito), mientras que usar solo `okrug` es demasiado grueso y pierde la diferencia de precios entre distritos de una misma zona. Para quedar en un punto intermedio, **se reemplazó `district` por `grupo_distrito`**, una variable categórica de 3 grupos de precio por okrug:
+
+1. **Nivel de precio de cada distrito:** promedio del $\ln(\text{price\_per\_sqm})$ de sus anuncios, calculado **solo con el conjunto de entrenamiento**.
+2. **Clustering dentro de cada okrug:** se aplica **KMeans unidimensional** (`K_POR_OKRUG = 3`, `n_init=10`, `random_state=42`) sobre ese nivel de precio, solo entre los distritos del mismo okrug. Si un okrug tiene menos de 3 distritos, se usa `k = nº de distritos`.
+3. **Etiquetado:** los clusters se ordenan por su centroide y se nombran `<okrug>_0` (grupo más barato), `<okrug>_1` y `<okrug>_2` (grupo más caro).
+4. **Distritos sin datos en train:** quedan asignados al grupo `<okrug>_0` de su okrug.
+5. **Sin fuga de información:** al calcular los grupos únicamente con el set de entrenamiento (mismo split 80/20, semilla 42, que usa la corrida de OLS), el set de prueba no influye en la definición de los grupos.
+
+Resultado: se conserva la jerarquía geográfica (el grupo siempre pertenece a un okrug) y se capta la diferencia de precio entre distritos baratos y caros de la misma zona, con ≈ 44 regresores en lugar de más de 140.
+
+> **Nota:** esta agrupación también se probó en el modelo de alquileres (mismo procedimiento sobre `rent_per_sqm`), pero el modelo final de alquileres mantiene `district` como variable categórica.
+
+### 7. Modelo de Alquileres
 - Partiendo de todas las covariables disponibles en `rentals.csv`, se realizó una selección progresiva hacia atrás evaluando la significancia estadística ($t$-statistic y $p$-values < 0.05).
 - Se incorporaron las variables de amenidades clave (`furnished`, `pets_allowed`), línea de metro (`metro_line`), distritos y el rezago de renta zonal mensual.
 
@@ -68,12 +82,12 @@ Las métricas reportadas corresponden a conjuntos de prueba independientes (**Te
 | Modelo / Especificación | R² | RMSE (Escala original) | MAE (Escala original) | Error Relativo (MAPE) | Diagnóstico de Residuos |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Venta – Baseline inicial** (`price_rub`, lineal) | 0.831 | ≈ 3.200.000 RUB | ≈ 2.235.000 RUB | ~16.5 % | Residuos muy asimétricos (*skew* 0.93, *kurtosis* 8.6) |
-| **Venta – Modelo Final** ($\ln(\text{ppsqm})$, distrito, lag mensual) | **0.962** | **≈ 1.705.000 RUB** | **≈ 1.117.000 RUB** | **8.47 %** | Residuos cuasi-normales (*skew* -0.10, *kurtosis* 3.09) |
+| **Venta – Modelo Final** ($\ln(\text{ppsqm})$, `grupo_distrito` por okrug, sin el panel mensual) | **0.904** | **≈ 2.723.971 RUB** | **≈ 1.855.815 RUB** | **14.42 %** | Residuos cuasi-normales (*skew* -0.388, *kurtosis* 2.988) |
 | **Alquiler – Modelo Final** ($\ln(\text{rent/m²})$, distrito, lag mensual) | **0.943** | **≈ 7.656 RUB/mes** | **≈ 5.122 RUB/mes** | **9.45 %** | Residuos simétricos (*skew* 0.06, *kurtosis* 3.15) |
 
 ### Conclusiones Técnicas
-- **Reducción del error en ventas en casi un 47%:** El pasaje de `price_rub` mediante la aplicación de log junto al contexto del distrito y su rezago mensual redujo el RMSE de ~3,2M a ~1,7M RUB.
-- **Ausencia de sobreajuste (*Overfitting*):** El error en entrenamiento y en prueba resulta prácticamente idéntico (Ventas: Train RMSE 1,725M vs Test RMSE 1,705M; Alquileres: Train RMSE 7.641 vs Test RMSE 7.656).
+- **Reducción del error en ventas cercana al 15%:** el pasaje de `price_rub` lineal a $\ln(\text{price\_per\_sqm})$ con `grupo_distrito` por okrug redujo el RMSE de ~3,2M a ~2,72M RUB (R² de 0.831 a 0.904) y el MAPE de ~16.5 % a 14.42 %.
+- **Ausencia de sobreajuste (*Overfitting*):** el error en entrenamiento y en prueba resulta prácticamente idéntico (Ventas: Train RMSE 2,721M vs Test RMSE 2,724M; Alquileres: Train RMSE 7.641 vs Test RMSE 7.656).
 - **Alcance del modelo:** Las especificaciones obtenidas no pretenden emular la negociación final o factores micro subjetivos, pero proporcionan un tasador de referencia altamente preciso para detectar sobreprecios u oportunidades en anuncios de mercado.
 
 ---
