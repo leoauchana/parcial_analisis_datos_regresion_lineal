@@ -59,7 +59,7 @@ Se utilizó el dataset público de Kaggle: [`sergionefedov/moscow-real-estate-sa
 ### 6. Agrupación de Distritos por Nivel de Precio dentro de cada Okrug
 Usar `district` como variable categórica agrega más de 100 dummies (cond_no ≈ 16.700 en los modelos con distrito), mientras que usar solo `okrug` es demasiado grueso y pierde la diferencia de precios entre distritos de una misma zona. Para quedar en un punto intermedio, **se reemplazó `district` por `grupo_distrito`**, una variable categórica de 3 grupos de precio por okrug:
 
-1. **Nivel de precio de cada distrito:** promedio del $\ln(\text{price\_per\_sqm})$ de sus anuncios, calculado **solo con el conjunto de entrenamiento**.
+1. **Nivel de precio de cada distrito:** promedio del $\ln(\text{ppsqm})$ de sus anuncios, calculado **solo con el conjunto de entrenamiento**.
 2. **Clustering dentro de cada okrug:** se aplica **KMeans unidimensional** (`K_POR_OKRUG = 3`, `n_init=10`, `random_state=42`) sobre ese nivel de precio, solo entre los distritos del mismo okrug. Si un okrug tiene menos de 3 distritos, se usa `k = nº de distritos`.
 3. **Etiquetado:** los clusters se ordenan por su centroide y se nombran `<okrug>_0` (grupo más barato), `<okrug>_1` y `<okrug>_2` (grupo más caro).
 4. **Distritos sin datos en train:** quedan asignados al grupo `<okrug>_0` de su okrug.
@@ -86,7 +86,7 @@ Las métricas reportadas corresponden a conjuntos de prueba independientes (**Te
 | **Alquiler – Modelo Final** ($\ln(\text{rent/m²})$, distrito, lag mensual) | **0.943** | **≈ 7.656 RUB/mes** | **≈ 5.122 RUB/mes** | **9.45 %** | Residuos simétricos (*skew* 0.06, *kurtosis* 3.15) |
 
 ### Conclusiones Técnicas
-- **Reducción del error en ventas cercana al 15%:** el pasaje de `price_rub` lineal a $\ln(\text{price\_per\_sqm})$ con `grupo_distrito` por okrug redujo el RMSE de ~3,2M a ~2,72M RUB (R² de 0.831 a 0.904) y el MAPE de ~16.5 % a 14.42 %.
+- **Reducción del error en ventas cercana al 15%:** el pasaje de `price_rub` lineal a $\ln(\text{ppsqm})$ con `grupo_distrito` por okrug redujo el RMSE de ~3,2M a ~2,72M RUB (R² de 0.831 a 0.904) y el MAPE de ~16.5 % a 14.42 %.
 - **Ausencia de sobreajuste (*Overfitting*):** el error en entrenamiento y en prueba resulta prácticamente idéntico (Ventas: Train RMSE 2,721M vs Test RMSE 2,724M; Alquileres: Train RMSE 7.641 vs Test RMSE 7.656).
 - **Alcance del modelo:** Las especificaciones obtenidas no pretenden emular la negociación final o factores micro subjetivos, pero proporcionan un tasador de referencia altamente preciso para detectar sobreprecios u oportunidades en anuncios de mercado.
 
