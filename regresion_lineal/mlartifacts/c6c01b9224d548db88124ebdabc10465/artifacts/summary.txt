@@ -1,0 +1,70 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price_per_sqm   R-squared:                       0.960
+Model:                            OLS   Adj. R-squared:                  0.960
+Method:                 Least Squares   F-statistic:                 2.114e+04
+Date:                Wed, 21 Oct 2026   Prob (F-statistic):               0.00
+Time:                        16:38:33   Log-Likelihood:                 30563.
+No. Observations:               38541   AIC:                        -6.104e+04
+Df Residuals:                   38496   BIC:                        -6.065e+04
+Df Model:                          44                                         
+Covariance Type:            nonrobust                                         
+===============================================================================================
+                                  coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                           0.5303      0.052     10.132      0.000       0.428       0.633
+to_center_km                    0.0009      0.000      4.947      0.000       0.001       0.001
+metro_distance_min             -0.0016   2.82e-05    -56.847      0.000      -0.002      -0.002
+floor                           0.0010      0.000      9.858      0.000       0.001       0.001
+has_balcony                     0.0286      0.001     22.304      0.000       0.026       0.031
+log_precio_distrito_mes_ant     0.9313      0.004    234.770      0.000       0.924       0.939
+grupo_distrito_CAO_1            0.0270      0.006      4.744      0.000       0.016       0.038
+grupo_distrito_CAO_2            0.0452      0.005      9.499      0.000       0.036       0.055
+grupo_distrito_NAO_0           -0.2333      0.008    -30.800      0.000      -0.248      -0.218
+grupo_distrito_NAO_1           -0.2464      0.007    -37.013      0.000      -0.259      -0.233
+grupo_distrito_NAO_2           -0.1880      0.009    -20.299      0.000      -0.206      -0.170
+grupo_distrito_SAO_0           -0.2224      0.009    -25.716      0.000      -0.239      -0.205
+grupo_distrito_SAO_1           -0.1620      0.005    -30.448      0.000      -0.172      -0.152
+grupo_distrito_SAO_2           -0.0570      0.005    -12.165      0.000      -0.066      -0.048
+grupo_distrito_SVAO_0          -0.1801      0.006    -30.299      0.000      -0.192      -0.168
+grupo_distrito_SVAO_1          -0.1607      0.005    -31.085      0.000      -0.171      -0.151
+grupo_distrito_SVAO_2          -0.0794      0.005    -15.338      0.000      -0.089      -0.069
+grupo_distrito_SZAO_0          -0.1637      0.005    -30.346      0.000      -0.174      -0.153
+grupo_distrito_SZAO_1          -0.1080      0.008    -14.067      0.000      -0.123      -0.093
+grupo_distrito_SZAO_2          -0.0647      0.006    -11.550      0.000      -0.076      -0.054
+grupo_distrito_TAO_0           -0.1110      0.011     -9.783      0.000      -0.133      -0.089
+grupo_distrito_TAO_1           -0.1786      0.010    -17.407      0.000      -0.199      -0.158
+grupo_distrito_TAO_2           -0.2154      0.010    -20.706      0.000      -0.236      -0.195
+grupo_distrito_VAO_0           -0.1591      0.005    -29.112      0.000      -0.170      -0.148
+grupo_distrito_VAO_1           -0.1071      0.005    -20.472      0.000      -0.117      -0.097
+grupo_distrito_VAO_2           -0.0211      0.006     -3.633      0.000      -0.032      -0.010
+grupo_distrito_YuAO_0          -0.1876      0.006    -32.606      0.000      -0.199      -0.176
+grupo_distrito_YuAO_1          -0.1700      0.006    -28.258      0.000      -0.182      -0.158
+grupo_distrito_YuAO_2          -0.0902      0.005    -17.989      0.000      -0.100      -0.080
+grupo_distrito_YuZAO_0         -0.2221      0.007    -32.519      0.000      -0.236      -0.209
+grupo_distrito_YuZAO_1         -0.1247      0.005    -24.631      0.000      -0.135      -0.115
+grupo_distrito_YuZAO_2         -0.0586      0.005    -12.143      0.000      -0.068      -0.049
+grupo_distrito_ZAO_0           -0.2095      0.006    -33.220      0.000      -0.222      -0.197
+grupo_distrito_ZAO_1           -0.1426      0.006    -25.261      0.000      -0.154      -0.132
+grupo_distrito_ZAO_2           -0.0784      0.005    -16.927      0.000      -0.087      -0.069
+grupo_distrito_ZelAO_0         -0.1939      0.010    -19.312      0.000      -0.214      -0.174
+renovation_designer             0.3002      0.002    146.584      0.000       0.296       0.304
+renovation_euro                 0.1430      0.001    106.208      0.000       0.140       0.146
+renovation_no_renovation       -0.1094      0.002    -72.266      0.000      -0.112      -0.106
+building_type_khrushchev       -0.2077      0.002   -106.364      0.000      -0.212      -0.204
+building_type_modern_panel     -0.0464      0.002    -25.470      0.000      -0.050      -0.043
+building_type_monolith          0.0455      0.002     24.857      0.000       0.042       0.049
+building_type_panel            -0.1289      0.002    -71.023      0.000      -0.132      -0.125
+building_type_stalin            0.1512      0.003     59.007      0.000       0.146       0.156
+metro_distance_type_walk        0.1338      0.002     77.239      0.000       0.130       0.137
+==============================================================================
+Omnibus:                       73.314   Durbin-Watson:                   2.007
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               75.680
+Skew:                          -0.091   Prob(JB):                     3.68e-17
+Kurtosis:                       3.117   Cond. No.                     8.14e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.14e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

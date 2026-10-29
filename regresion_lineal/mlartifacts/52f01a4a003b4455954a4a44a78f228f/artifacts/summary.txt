@@ -1,0 +1,59 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price_per_sqm   R-squared:                       0.960
+Model:                            OLS   Adj. R-squared:                  0.960
+Method:                 Least Squares   F-statistic:                 2.901e+04
+Date:                Wed, 21 Oct 2026   Prob (F-statistic):               0.00
+Time:                        03:36:42   Log-Likelihood:                 30796.
+No. Observations:               39457   AIC:                        -6.152e+04
+Df Residuals:                   39423   BIC:                        -6.123e+04
+Df Model:                          33                                         
+Covariance Type:            nonrobust                                         
+===============================================================================================
+                                  coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                           1.2554      0.045     27.650      0.000       1.166       1.344
+to_center_km                   -0.0023      0.000    -12.917      0.000      -0.003      -0.002
+metro_distance_min             -0.0017   2.85e-05    -58.938      0.000      -0.002      -0.002
+floor                           0.0010      0.000      9.747      0.000       0.001       0.001
+has_balcony                     0.0301      0.001     23.406      0.000       0.028       0.033
+log_precio_distrito_mes_ant     0.8805      0.004    225.972      0.000       0.873       0.888
+grupo_distrito_G01             -0.1382      0.005    -26.937      0.000      -0.148      -0.128
+grupo_distrito_G02             -0.2255      0.008    -29.000      0.000      -0.241      -0.210
+grupo_distrito_G03             -0.2364      0.008    -30.954      0.000      -0.251      -0.221
+grupo_distrito_G04             -0.2669      0.008    -31.541      0.000      -0.284      -0.250
+grupo_distrito_G05             -0.2485      0.009    -26.834      0.000      -0.267      -0.230
+grupo_distrito_G06             -0.2290      0.010    -23.324      0.000      -0.248      -0.210
+grupo_distrito_G07             -0.2286      0.010    -23.213      0.000      -0.248      -0.209
+grupo_distrito_G08             -0.2105      0.010    -20.437      0.000      -0.231      -0.190
+grupo_distrito_G09             -0.2065      0.011    -19.502      0.000      -0.227      -0.186
+grupo_distrito_G10             -0.1828      0.011    -16.923      0.000      -0.204      -0.162
+grupo_distrito_G11             -0.1660      0.011    -15.572      0.000      -0.187      -0.145
+grupo_distrito_G12             -0.1432      0.011    -12.641      0.000      -0.165      -0.121
+grupo_distrito_G13             -0.1282      0.012    -10.925      0.000      -0.151      -0.105
+grupo_distrito_G14             -0.1064      0.012     -9.052      0.000      -0.129      -0.083
+grupo_distrito_G15             -0.1016      0.012     -8.541      0.000      -0.125      -0.078
+grupo_distrito_G16             -0.0970      0.012     -7.978      0.000      -0.121      -0.073
+grupo_distrito_G17             -0.0515      0.013     -3.891      0.000      -0.077      -0.026
+grupo_distrito_G18             -0.0354      0.015     -2.403      0.016      -0.064      -0.007
+grupo_distrito_G19              0.0063      0.014      0.453      0.650      -0.021       0.034
+renovation_designer             0.3106      0.002    156.994      0.000       0.307       0.314
+renovation_euro                 0.1457      0.001    107.953      0.000       0.143       0.148
+renovation_no_renovation       -0.1114      0.002    -72.946      0.000      -0.114      -0.108
+building_type_khrushchev       -0.2101      0.002   -107.458      0.000      -0.214      -0.206
+building_type_modern_panel     -0.0459      0.002    -25.120      0.000      -0.050      -0.042
+building_type_monolith          0.0490      0.002     26.818      0.000       0.045       0.053
+building_type_panel            -0.1304      0.002    -71.624      0.000      -0.134      -0.127
+building_type_stalin            0.1603      0.002     64.405      0.000       0.155       0.165
+metro_distance_type_walk        0.1477      0.002     87.466      0.000       0.144       0.151
+==============================================================================
+Omnibus:                       81.996   Durbin-Watson:                   1.991
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               87.431
+Skew:                          -0.085   Prob(JB):                     1.03e-19
+Kurtosis:                       3.156   Cond. No.                     7.48e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.48e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

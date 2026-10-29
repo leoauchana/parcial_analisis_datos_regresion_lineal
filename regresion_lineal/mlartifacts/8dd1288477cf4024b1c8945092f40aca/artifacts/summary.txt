@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price_per_sqm   R-squared:                       0.836
+Model:                            OLS   Adj. R-squared:                  0.836
+Method:                 Least Squares   F-statistic:                 2.004e+05
+Date:                Wed, 21 Oct 2026   Prob (F-statistic):               0.00
+Time:                        04:44:10   Log-Likelihood:                 2677.4
+No. Observations:               39457   AIC:                            -5351.
+Df Residuals:                   39455   BIC:                            -5334.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+===============================================================================================
+                                  coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                          -2.9860      0.034    -88.932      0.000      -3.052      -2.920
+log_precio_distrito_mes_ant     1.2015      0.003    447.705      0.000       1.196       1.207
+==============================================================================
+Omnibus:                      478.069   Durbin-Watson:                   2.001
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              493.600
+Skew:                           0.271   Prob(JB):                    6.55e-108
+Kurtosis:                       2.915   Cond. No.                         371.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
